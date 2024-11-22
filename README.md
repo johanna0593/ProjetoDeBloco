@@ -1,9 +1,9 @@
 # Executar o projeto
 yarn start
 
-# Baixar proejeto do GitHub
+# Baixar projeto do GitHub
 git clone git@github.com:samuelhermany/colega.git
-- Instalar dependencias
+- Instalar dependências
 npm install
 - Executar projeto
 yarn start
