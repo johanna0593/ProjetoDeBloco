@@ -1,0 +1,31 @@
+/* Conquistas */
+.AchievementsContainer {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.AchievementsContainer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.AchievementsContainer li {
+  padding: 5px 0;
+  font-size: 16px;
+}
+
+.AchievementsContainer li:before {
+  content: "🎖️";
+  margin-right: 8px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .AchievementsContainer ul {
+    font-size: 14px;
+  }
+}
