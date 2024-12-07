@@ -1,0 +1,99 @@
+/* Container principal do Explorar */
+.app-container {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding-top: 120px; /* Aumentando o padding para dar mais espaço ao Header */
+    display: flex;
+    flex-direction: column; /* Empilhamento vertical */
+    align-items: center; /* Centraliza o conteúdo */
+    justify-content: flex-start;
+    height: 100%;
+}
+
+/* Ajuste para os botões */
+.opcoes {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os botões se ajustem conforme a tela */
+    justify-content: center; /* Centraliza os botões */
+    gap: 15px; /* Espaçamento entre os botões */
+    margin-top: 20px; /* Espaço superior */
+    width: 100%; /* Garante que ocupe toda a largura */
+}
+
+/* Botões de categoria */
+.btn-categoria {
+    padding: 12px 25px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50px; /* Bordas arredondadas */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn-categoria:hover {
+    background-color: #0056b3;
+}
+
+.btn-categoria:active {
+    background-color: #004085;
+}
+
+.btn-categoria:focus {
+    outline: none;
+}
+
+/* Cards (resultado da pesquisa de filmes) */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Grade responsiva */
+    gap: 20px;
+    padding: 20px;
+    width: 100%; /* Garantir que ocupe toda a largura */
+    margin-top: 30px; /* Espaço entre os botões e os cards */
+}
+
+/* Estilo para o card */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos para título e texto dentro do card */
+.card-titulo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card-categoria,
+.card-ano {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+}
+
+.card-categoria {
+    font-style: italic;
+}
+
+.card-ano {
+    color: #999;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}

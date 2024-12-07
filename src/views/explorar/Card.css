@@ -1,0 +1,43 @@
+/* Card */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para hover */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Levanta o card ao passar o mouse */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Sombra mais forte no hover */
+  }
+  
+  /* Título do card */
+  .card-titulo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px; /* Espaço entre o título e as outras informações */
+    text-align: center;  /* Centraliza o título */
+  }
+  
+  /* Categoria e ano do card */
+  .card-categoria, .card-ano {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #666; /* Cor mais suave para as informações */
+    text-align: center;  /* Centraliza categoria e ano */
+  }
+  
+  /* Estilo adicional para os textos (título, categoria, ano) */
+  .card-categoria {
+    font-style: italic; /* Torna a categoria um pouco mais leve */
+  }
+  
+  .card-ano {
+    color: #999; /* Cor suave para o ano */
+    font-size: 0.9rem; /* Tamanho do texto ligeiramente menor */
+    margin-top: 5px;  /* Distância do ano em relação à categoria */
+  }
+  

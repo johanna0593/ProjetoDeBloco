@@ -1,0 +1,48 @@
+/* src/views/perfil/index.css */
+
+/* Estilo geral para a página */
+.app-container {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding-top: 70px; /* Ajustando para dar espaço ao Header */
+  display: flex;
+  flex-direction: column; /* Empilhamento vertical */
+  align-items: center; /* Centraliza o conteúdo */
+  justify-content: flex-start;
+  height: 100%;
+}
+
+/* Estilo do título "Perfil" */
+.titulo-perfil {
+  font-size: 2rem; /* Ajuste o tamanho da fonte conforme necessário */
+  font-weight: bold;
+  color: #333;
+  margin-top: 30px; /* Distância do topo */
+  margin-bottom: 20px; /* Distância do conteúdo */
+  text-align: center; /* Centraliza o título */
+}
+
+/* Estilo do feed-container para não sobrepor o conteúdo */
+.feed-container {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Ajuste do card de favoritos para exibição */
+.favoritos-container {
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
